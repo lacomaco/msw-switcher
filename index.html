@@ -9,13 +9,48 @@
         div.switcher_main {
             background-color: #fafafa;
         }
+
         ul.switcher_category {
             list-style: none;
             padding-left:0px;
         }
 
-        .switcher_main > div {
+        .switcher_case {
+            margin-top: 10px;
+            background-color:#fafafa;
+            padding: 20px 10px;
+        }
+
+        .case_description {
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .case_toggle {
+            cursor: pointer;
+            border:0px;
+            width: 60px;
+            color: white;
+            font-size: 16px;
+            padding: 5px 2px;
+            border-radius: 3px;
+        }
+
+        .case_toggle.on {
+            background-color: #61affe;
+        }
+
+        .case_toggle.off {
+            background-color: #f93e3e;
+        }
+
+        .api_list > div {
             margin-top: 15px;
+        }
+
+        .api_list_hidden {
+            display: none;
         }
 
         div.api_get {
@@ -24,18 +59,21 @@
             padding: 5px;
             border-radius: 5px;
         }
+
         div.api_post {
             border:2px solid #49CC90;
             background-color: #e8f6f0;
             padding: 5px;
             border-radius: 5px;
         }
+
         div.api_put {
             border: 2px solid #FCA130;
             background-color: #FBF1E6;
             padding: 5px;
             border-radius: 5px;
         }
+
         div.api_delete {
             border: 2px solid #f93e3e;
             background-color: #fae7e7;
@@ -79,83 +117,106 @@
             background-color: #f93e3e;
         }
     </style>
-    <!-- POST GET PUT DELETE -->
-    <!-- GET POST PUT DELETE -->
 </head>
 <body>
     바디임다.
     <div class="switcher_main">
-        <div class="api_get">
-            <div class="category_description">
-                <button class="category_method">POST</button>
-                <span class="api_url">/pet/findByStatus</span>
-                <span class="api_description">Finds Pets by Status</span>
+        <div class="switcher_case">
+            <div class="case_description">
+                <span class="case_name">
+                    중개판매 대응 실패 케이스
+                </span>
+                <button class="case_toggle on">
+                    Toggle
+                </button>
             </div>
-            <ul class="switcher_category">
-                <li class="switcher_api">
-                    API 리스트?
-                </li>
-                <li class="switcher_api">
-                    API 리스트?
-                </li>
-                <li class="switcher_api">
-                    API 리스트?
-                </li>
-            </ul>
-        </div>
-        <div class="api_post">
-            <div class="category_description">
-                <button class="category_method">POST</button>
-                <span class="api_url">/pet/findByStatus</span>
-                <span class="api_description">Finds Pets by Status</span>
+            <!-- 숨길때 .api_list_hidden 추가 -->
+            <div class="api_list">
+                <div class="api_get">
+                    <div class="category_description">
+                        <button class="category_method">POST</button>
+                        <span class="api_url">/pet/findByStatus</span>
+                        <span class="api_description">Finds Pets by Status</span>
+                        <button class="case_toggle on">
+                            Toggle
+                        </button>
+                    </div>
+                    <ul class="switcher_category">
+                        <li class="switcher_api">
+                            API 리스트?
+                        </li>
+                        <li class="switcher_api">
+                            API 리스트?
+                        </li>
+                        <li class="switcher_api">
+                            API 리스트?
+                        </li>
+                    </ul>
+                </div>
+                <div class="api_post">
+                    <div class="category_description">
+                        <button class="category_method">POST</button>
+                        <span class="api_url">/pet/findByStatus</span>
+                        <span class="api_description">Finds Pets by Status</span>
+                        <button class="case_toggle on">
+                            Toggle
+                        </button>
+                    </div>
+                    <ul class="switcher_category">
+                        <li class="switcher_api">
+                            API 리스트?
+                        </li>
+                        <li class="switcher_api">
+                            API 리스트?
+                        </li>
+                        <li class="switcher_api">
+                            API 리스트?
+                        </li>
+                    </ul>
+                </div>
+                <div class="api_put">
+                    <div class="category_description">
+                        <button class="category_method">PUT</button>
+                        <span class="api_url">/pet/findByStatus</span>
+                        <span class="api_description">Finds Pets by Status</span>
+                        <button class="case_toggle on">
+                            Toggle
+                        </button>
+                    </div>
+                    <ul class="switcher_category">
+                        <li class="switcher_api">
+                            API 리스트?
+                        </li>
+                        <li class="switcher_api">
+                            API 리스트?
+                        </li>
+                        <li class="switcher_api">
+                            API 리스트?
+                        </li>
+                    </ul>
+                </div>
+                <div class="api_delete">
+                    <div class="category_description">
+                        <button class="category_method">DELETE</button>
+                        <span class="api_url">/pet/findByStatus</span>
+                        <span class="api_description">Finds Pets by Status</span>
+                        <button class="case_toggle on">
+                            Toggle
+                        </button>
+                    </div>
+                    <ul class="switcher_category">
+                        <li class="switcher_api">
+                            API 리스트?
+                        </li>
+                        <li class="switcher_api">
+                            API 리스트?
+                        </li>
+                        <li class="switcher_api">
+                            API 리스트?
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul class="switcher_category">
-                <li class="switcher_api">
-                    API 리스트?
-                </li>
-                <li class="switcher_api">
-                    API 리스트?
-                </li>
-                <li class="switcher_api">
-                    API 리스트?
-                </li>
-            </ul>
-        </div>
-        <div class="api_put">
-            <div class="category_description">
-                <button class="category_method">PUT</button>
-                <span class="api_url">/pet/findByStatus</span>
-                <span class="api_description">Finds Pets by Status</span>
-            </div>
-            <ul class="switcher_category">
-                <li class="switcher_api">
-                    API 리스트?
-                </li>
-                <li class="switcher_api">
-                    API 리스트?
-                </li>
-                <li class="switcher_api">
-                    API 리스트?
-                </li>
-            </ul>
-        </div>
-        <div class="api_delete">
-            <div class="category_description">
-                <button class="category_method">DELETE</button>
-                <span class="api_url">/pet/findByStatus</span>
-                <span class="api_description">Finds Pets by Status</span>
-            </div>
-            <ul class="switcher_category">
-                <li class="switcher_api">
-                    API 리스트?
-                </li>
-                <li class="switcher_api">
-                    API 리스트?
-                </li>
-                <li class="switcher_api">
-                    API 리스트?
-                </li>
-            </ul>
         </div>
     </div>
 
