@@ -1,0 +1,29 @@
+{
+  "name": "msw-switcher",
+  "version": "1.0.0",
+  "description": "msw-api-switcher",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lacomaco/msw-switcher.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lacomaco/msw-switcher/issues"
+  },
+  "homepage": "https://github.com/lacomaco/msw-switcher#readme",
+  "dependencies": {
+    "msw": "^0.39.2"
+  },
+  "devDependencies": {
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "msw": {
+    "workerDirectory": ""
+  }
+}
