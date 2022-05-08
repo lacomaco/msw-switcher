@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.switcher_main {
+            background-color: #fafafa;
+        }
+        ul.switcher_category {
+            list-style: none;
+            padding-left:0px;
+        }
+
+        .switcher_main > div {
+            margin-top: 15px;
+        }
+
+        div.api_get {
+            border:2px solid #61affe;
+            background-color: #ebf3fb;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        div.api_post {
+            border:2px solid #49CC90;
+            background-color: #e8f6f0;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        div.api_put {
+            border: 2px solid #FCA130;
+            background-color: #FBF1E6;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        div.api_delete {
+            border: 2px solid #f93e3e;
+            background-color: #fae7e7;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .category_description {
+            cursor:pointer;
+            font-size: 16px;
+        }
+
+        .category_method {
+            color:white;
+            border: 0px;
+            font-size: 16px;
+            padding: 5px 2px;
+            width:80px;
+            border-radius: 3px;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .category_description .api_url {
+            font-weight: bold;
+        }
+
+        .api_get .category_method {
+            background-color: #61affe;
+        }
+
+        .api_post .category_method {
+            background-color: #49CC90;
+        }
+
+        .api_put .category_method {
+            background-color: #FCA130;
+        }
+
+        .api_delete .category_method {
+            background-color: #f93e3e;
+        }
+    </style>
+    <!-- POST GET PUT DELETE -->
+    <!-- GET POST PUT DELETE -->
+</head>
+<body>
+    바디임다.
+    <div class="switcher_main">
+        <div class="api_get">
+            <div class="category_description">
+                <button class="category_method">POST</button>
+                <span class="api_url">/pet/findByStatus</span>
+                <span class="api_description">Finds Pets by Status</span>
+            </div>
+            <ul class="switcher_category">
+                <li class="switcher_api">
+                    API 리스트?
+                </li>
+                <li class="switcher_api">
+                    API 리스트?
+                </li>
+                <li class="switcher_api">
+                    API 리스트?
+                </li>
+            </ul>
+        </div>
+        <div class="api_post">
+            <div class="category_description">
+                <button class="category_method">POST</button>
+                <span class="api_url">/pet/findByStatus</span>
+                <span class="api_description">Finds Pets by Status</span>
+            </div>
+            <ul class="switcher_category">
+                <li class="switcher_api">
+                    API 리스트?
+                </li>
+                <li class="switcher_api">
+                    API 리스트?
+                </li>
+                <li class="switcher_api">
+                    API 리스트?
+                </li>
+            </ul>
+        </div>
+        <div class="api_put">
+            <div class="category_description">
+                <button class="category_method">PUT</button>
+                <span class="api_url">/pet/findByStatus</span>
+                <span class="api_description">Finds Pets by Status</span>
+            </div>
+            <ul class="switcher_category">
+                <li class="switcher_api">
+                    API 리스트?
+                </li>
+                <li class="switcher_api">
+                    API 리스트?
+                </li>
+                <li class="switcher_api">
+                    API 리스트?
+                </li>
+            </ul>
+        </div>
+        <div class="api_delete">
+            <div class="category_description">
+                <button class="category_method">DELETE</button>
+                <span class="api_url">/pet/findByStatus</span>
+                <span class="api_description">Finds Pets by Status</span>
+            </div>
+            <ul class="switcher_category">
+                <li class="switcher_api">
+                    API 리스트?
+                </li>
+                <li class="switcher_api">
+                    API 리스트?
+                </li>
+                <li class="switcher_api">
+                    API 리스트?
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./dist/main.js"></script>
+</body>
+</html>
